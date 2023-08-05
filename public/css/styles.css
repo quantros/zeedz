@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#home {
+    width: 80%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* This creates five columns */
+    gap: 20px; /* This adds space between the grid items */
+    padding: 20px; /* This adds space around the grid */
+}
+
+.grid-item img {
+    width: 25%; /* This makes the image fill 70% of the width of the grid item */
+    height: auto; /* This keeps the image's original aspect ratio */
+    display: block; /* This makes the image a block element */
+    margin: 0 auto; /* This centers the image */
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px; /* This sets a maximum width for the grid items */
+    margin: 0 auto; /* This centers the grid items */
+}
+
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#searchContainer .input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#searchContainer .input::placeholder {
+    color: #999;
+}
+
+#searchContainer button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
